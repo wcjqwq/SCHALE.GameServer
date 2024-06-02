@@ -52,10 +52,10 @@ jobs:
       run: dotnet publish -c Release -p:PublishProfile=./SCHALE.GameServer/Properties/PublishProfiles/Win_x64.pubxml
     - name: rm files
       run: |
-        del ./SCHALE.GameServer/bin/Release/net8.0/linux-x64/publish/SCHALE.GameServer.pdb
-        del ./SCHALE.GameServer/bin/Release/net8.0/linux-x64/publish/SCHALE.Common.pdb
-        del ./SCHALE.GameServer/bin/Release/net8.0/linux-x64/publish/appsettings.Docker.json
-        del ./SCHALE.GameServer/bin/Release/net8.0/linux-x64/publish/appsettings.Development.json
+        del ./SCHALE.GameServer/bin/Release/net8.0/win-x64/publish/SCHALE.GameServer.pdb
+        del ./SCHALE.GameServer/bin/Release/net8.0/win-x64/publish/SCHALE.Common.pdb
+        del ./SCHALE.GameServer/bin/Release/net8.0/win-x64/publish/appsettings.Docker.json
+        del ./SCHALE.GameServer/bin/Release/net8.0/win-x64/publish/appsettings.Development.json
     - name: Upload output
       uses: actions/upload-artifact@v2
       with:
